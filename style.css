@@ -1,0 +1,346 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    background-color: #f9f9ef;
+}
+
+/* TITLE SHIZZ ############################################################ */
+/* max width for screen: 1920px */
+.title {
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    padding: 3rem 1rem 1.5rem 1rem;
+    background-color: #86adb2;
+    background-image: url(img/bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+    height: 528px;
+
+}
+.title-inner {
+    padding: 1rem 1rem;
+    max-width: 40rem;
+    margin: 19rem auto 1.5rem auto;
+    background-color: rgba(209, 230, 235, 0.4);
+    /* opacity: 0.5; */
+    border-radius: 5px;
+}
+.title__header {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight:700;
+    /* text-align:center; */
+    padding: 0.5rem 1rem;
+
+    display: inline-block;
+    border-radius: 2px;
+    background-color: rgba(223, 224, 176, 0.9);
+
+    line-height: 1.2;
+    letter-spacing: 1px;
+}
+.title__sub-header {
+    margin: 0;
+    font-family: 'PT Serif', serif;
+    /* text-align:center; */
+    /* margin-top: 0.1rem; */
+    padding: 0.2rem 1rem;
+    font-size:24px;
+
+    display: inline-block;
+    background-color: rgba(209, 230, 235, 0.9);
+    border-radius: 2px;
+
+    line-height: 1.7
+}
+.title__info {
+    padding-top: 1rem;
+    text-align: right;
+    margin: 0;
+    font-family: 'Open Sans', serif;
+    color: white;
+    /* font-weight: 700; */
+}
+
+
+/* Enclosing container for each section,
+   which can contain any of the elements below */
+.section {
+    margin: 1.5rem auto;
+}
+
+
+/* PROSE SHIZZ ########################################################### */
+/* 60 to 75 characters per line,  35 to 40 for mobile devices*/
+/* line height should be approx 150% of the font size */
+/* longer line height for mobile devices*/
+
+/* enclosing container for each sets of paragraphs */
+.prose {
+    max-width: 38rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+/* default font settings */
+p {
+    font-family: 'PT Serif', sans-serif;
+    /* font-family: 'Noto Sans', sans-serif; */
+    font-size: 17px;
+    line-height: 1.7;
+}
+.prose p {
+    margin: 1.5rem 0;
+}
+.prose__header {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.5;
+    margin-top: 3rem;
+    color: #194561;
+}
+
+
+/* horizontal break */
+hr {
+    width: 100px;
+    margin: 2rem auto;
+}
+
+
+/* container for note block */
+.note {
+    background-color: #d3e2e5;
+    border-radius: 2px;
+    padding: .5rem 2rem;
+    max-width: 36rem;
+    margin: 0 auto;
+}
+/* note text */
+.note__text {
+    font-size: 15px;
+    font-family: 'PT Serif', sans-serif;
+    line-height: 1.5;
+    margin: 1.5rem 0;
+}
+
+
+/* links */
+a {
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    /* -webkit-transition: .3s;
+    -o-transition: .3s;
+    -moz-transition: .3s; */
+
+}
+/* a:hover {
+    color: blue;
+}
+ */
+
+ /* key words/phrases */
+ strong {
+     font-weight: 700;
+ }
+mark {
+    padding: 2px 3px;
+    background-color: #dfe0b0;
+}
+
+/* POPUP SHIZZ ###################################################### */
+/* popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    height: 35px;
+    width: 24px;
+
+    background-image: url('img/popup_icon.png');
+    background-repeat: no-repeat;
+    /* background-position:  */
+
+    /* pointer-events: all; */
+    cursor: pointer;
+}
+
+/* popup text */
+.popup .popup-text {
+    opacity: 0;
+    /* visibility: hidden; */
+    width: 300px;
+    background-color: #d3e2e5;
+    border-radius: 2px;
+    border: 2px solid grey;
+    padding: 10px 15px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+    position: absolute;
+    z-index: 1;
+
+    /* top: -5px; */
+    left: 120%;
+
+    font-size: 15px;
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+
+    transition: opacity 0.2s;
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+
+    pointer-events: none;
+}
+
+.popup:hover .popup-text {
+    opacity: 1;
+    /* visibility: visible; */
+}
+
+
+
+ /* VIZ SHIZZ ######################################################### */
+ /* container for graphic */
+.graphic-container {
+    background-color: white;
+    padding: 2.5rem 2.5rem;
+    height: auto;
+}
+ /* container for chart and title elements */
+ /* min screen resolution 1024x768 */
+.graphic {
+    margin: 0 auto;
+     /* Height of chart is defined in the script itself */
+    height: auto;
+    /* Responsive width */
+    max-width: 60rem;
+
+    position: relative;
+}
+.graphic__title {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+}
+.graphic__sub {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    margin: 0;
+}
+
+/* animation for viz tooltips */
+.tooltip {
+    transition: opacity 0.2s;
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+}
+
+
+
+/* SCROLLYTELLY SHIZZ ############################################################## */
+/* set scroll for graphic container */
+.scroll__graphic {
+    background-color: white;
+    width: 100%;
+
+    /* padding: 2.5rem 2.5rem; */
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
+    z-index: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+/* svg graphic */
+/* vertically centered chart */
+/* width and height set in js */
+.scroll__graphic .graphic {
+    position: absolute;
+    max-width: 70rem;
+
+    left: 50%;
+    /* -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%); */
+    top: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /* top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    margin: auto; */
+}
+
+#graphic__sub-filter {
+    display: inline-block;
+    padding: 0 5px;
+    background-color: #d3e2e5;
+    border-radius: 2px;
+    font-weight: 700;
+}
+
+/* center-aligned scroll text */
+.scroll__text {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 1rem;
+    max-width: 30rem;
+
+    pointer-events: none;
+    z-index: 1;
+}
+.step {
+    opacity: 1;
+    /* padding: 1rem; */
+}
+.step p {
+    background-color: rgba(249, 249, 239, 1);
+    padding: 1rem;
+}
+/* .step.is-active {
+    opacity: 1;
+} */
+
+/* HTML circles */
+.dot {
+    height: 14px;
+    width: 14px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+
+
+/* FOOTER ############################################################## */
+footer {
+    margin: 0 auto 0 auto;
+    width: 100%;
+    height: 200px;
+    background-image: url('img/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-attachment: fixed;
+    margin-top: 1.5rem;
+}
+
+/* home link */
+.link--home {
+    display: block;
+    border: none;
+    width: 64px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
