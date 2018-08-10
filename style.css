@@ -18,14 +18,22 @@ body {
     background-position: top center;
     height: 528px;
 
+    position: relative;
 }
 .title-inner {
     padding: 1rem 1rem;
     max-width: 40rem;
-    margin: 19rem auto 1.5rem auto;
+    height: 160px;
+    /* height: 500px; */
+    /* margin: 19rem auto 1.5rem auto; */
+    margin: auto;
     background-color: rgba(209, 230, 235, 0.4);
     /* opacity: 0.5; */
     border-radius: 5px;
+
+    position:absolute; /*it can be fixed too*/
+    left:0; right:0;
+    top:0; bottom:0;
 }
 .title__header {
     margin: 0;
