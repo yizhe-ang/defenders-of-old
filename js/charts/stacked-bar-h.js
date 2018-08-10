@@ -448,7 +448,7 @@ class Chart {
             .data(aegisSeq)
             .enter()
             .append('image')
-            .attr('xlink:href', d => `../../img/ti${d}_icon.png`)
+            .attr('xlink:href', d => `./img/ti${d}_icon.png`)
             .attr('x', 0)
             .attr('y', (d, i) => {
                 return this.y(this.labels[i]) + 20;
